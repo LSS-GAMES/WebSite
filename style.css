@@ -1,0 +1,355 @@
+.main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;   
+    /* Для выравнивания меню по центру
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    */
+}
+.main-menu > li {
+    display: inline-flex;
+}
+.main-menu > li + li {
+    margin-left: 20px;
+}
+.main-menu > li > a {
+    padding: 0 0 20px 0;
+    position: relative;
+    text-transform: uppercase;   
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    text-decoration: none;   
+}
+.main-menu > li > a:hover {
+    text-decoration: none;   
+    color: #337AB7;
+}
+.main-menu > li > a:after {
+    width: 0;
+    height: 3px;
+    background-color: #337AB7;
+    content: '';
+    left: 0;
+    bottom: 10px;
+    position: absolute;
+    transition: all .3s;
+}
+.main-menu > li > a:hover::after {
+    width: 100%;
+}
+.main-menu > li.active a:after {
+    width: 100%;
+}
+.main-menu li {
+    margin: 0;
+    white-space: nowrap;
+}
+.main-menu li.menu-children {
+    position: relative;
+    margin-right: 12px;
+}
+.main-menu li.menu-children:after {
+    position: absolute;
+    content: "\2039";
+    color: #337AB7;
+    font-size: 20px;
+    font-weight: bold;
+    right: -12px;
+    top: -2px;
+    transform: rotate(-90deg);
+}
+.main-menu li li.menu-children:after {
+    position: absolute;
+    content: "\2039";
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    right: 10px;
+    top: 12px;
+    transform: rotate(180deg);
+}
+.main-menu li.menu-children:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.main-menu ul {
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+    background-color: #337AB7;
+    position: absolute;
+    z-index: 20;
+    min-width: 220px;
+    top: 100%;
+    left: -30px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: all 200ms cubic-bezier(0.43, 0.59, 0.16, 1.25);
+}
+.main-menu ul li {
+    display: block;
+    padding: 0 10px;
+    line-height: 1.1;
+}
+.main-menu ul li:last-child {
+    margin-bottom: 0;
+}
+.main-menu ul li a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    transition: all .3s;
+    text-decoration: none;   
+}
+.main-menu ul li a:hover {
+    color: #337AB7;
+    background: #FFF;
+    text-decoration: none;   
+}
+.main-menu ul ul {
+    top: 0;
+    left: 100%;
+}
+
+
+.border {
+list-style: none;
+
+padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.border li {
+padding: 35px 20px;
+margin-bottom: 10px;
+border-radius: 5px;
+border-left: 50px solid #337AB7; 
+box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+     -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
+font-size: 20px;
+letter-spacing: 2px;
+transition: 0.3s all linear;
+}
+.border li:nth-child(1){border-color: #337AB7;}
+.border li:nth-child(2){border-color: #337AB7;}
+.border li:nth-child(3){border-color: #337AB7;}
+.border li:nth-child(4){border-color: #337AB7;}
+.border li:nth-child(5){border-color: #337AB7;}
+.border li:nth-child(6){border-color: #337AB7;}
+.border li:nth-child(7){border-color: #337AB7;}
+.border li:nth-child(8){border-color: #337AB7;}
+.border li:nth-child(9){border-color: #337AB7;}
+.border li:nth-child(10){border-color: #337AB7;}
+.border li:nth-child(11){border-color: #337AB7;}
+.border li:nth-child(12){border-color: #337AB7;}
+.border li:nth-child(13){border-color: #337AB7;}
+.border li:nth-child(14){border-color: #337AB7;}
+.border li:nth-child(15){border-color: #337AB7;}
+.border li:nth-child(16){border-color: #337AB7;}
+.border li:nth-child(17){border-color: #337AB7;}
+.border li:nth-child(18){border-color: #337AB7;}
+.border li:nth-child(19){border-color: #337AB7;}
+.border li:nth-child(20){border-color: #337AB7;}
+.border li:nth-child(21){border-color: #337AB7;}
+.border li:nth-child(22){border-color: #337AB7;}
+.border li:nth-child(23){border-color:  #337AB7;}
+.border li:nth-child(24){border-color: #337AB7;}
+.border li:nth-child(25){border-color: #337AB7;}
+.border li:nth-child(26){border-color: #337AB7;}
+.border li:nth-child(27){border-color: #337AB7;}
+.border li:nth-child(28){border-color: #337AB7;}
+.border li:nth-child(29){border-color: #337AB7;}
+.border li:nth-child(30){border-color: #337AB7;}
+.border li:nth-child(31){border-color: #337AB7;}
+.border li:nth-child(32){border-color: #337AB7;}
+.border li:nth-child(33){border-color: #337AB7;}
+.border li:nth-child(34){border-color: #337AB7;}
+.border li:nth-child(35){border-color: #337AB7;}
+.border li:nth-child(36){border-color: #337AB7;}
+.border li:nth-child(37){border-color: #337AB7;}
+.border li:nth-child(38){border-color: #337AB7;}
+.border li:nth-child(39){border-color: #337AB7;}
+.border li:nth-child(40){border-color: #337AB7;}
+.border li:nth-child(41){border-color: #337AB7;}
+.border li:nth-child(42){border-color: #337AB7;}
+.border li:nth-child(43){border-color: #337AB7;}
+.border li:nth-child(44){border-color: #337AB7;}
+.border li:nth-child(45){border-color: #337AB7;}
+.border li:nth-child(46){border-color: #337AB7;}
+.border li:nth-child(47){border-color: #337AB7;}
+.border li:nth-child(48){border-color: #337AB7;}
+.border li:nth-child(49){border-color: #337AB7;}
+.border li:nth-child(50){border-color: #337AB7;}
+.border li:nth-child(51){border-color: #337AB7;}
+.border li:nth-child(52){border-color: #337AB7;}
+.border li:nth-child(53){border-color: #337AB7;}
+.border li:nth-child(54){border-color: #337AB7;}
+.border li:nth-child(55){border-color: #337AB7;}
+.border li:nth-child(56){border-color: #337AB7;}
+.border li:nth-child(57){border-color: #337AB7;}
+.border li:nth-child(58){border-color: #337AB7;}
+.border li:nth-child(59){border-color: #337AB7;}
+.border li:nth-child(60){border-color: #337AB7;}
+.border li:nth-child(61){border-color: #337AB7;}
+.border li:nth-child(62){border-color: #337AB7;}
+.border li:nth-child(63){border-color: #337AB7;}
+.border li:nth-child(64){border-color: #337AB7;}
+.border li:nth-child(65){border-color: #337AB7;}
+.border li:nth-child(66){border-color: #337AB7;}
+.border li:nth-child(67){border-color: #337AB7;}
+.border li:nth-child(68){border-color: #337AB7;}
+.border li:nth-child(69){border-color: #337AB7;}
+.border li:nth-child(70){border-color: #337AB7;}
+.border li:nth-child(71){border-color: #337AB7;}
+.border li:nth-child(72){border-color: #337AB7;}
+.border li:nth-child(73){border-color: #337AB7;}
+.border li:nth-child(74){border-color: #337AB7;}
+.border li:nth-child(75){border-color: #337AB7;}
+.border li:nth-child(76){border-color: #337AB7;}
+.border li:nth-child(77){border-color: #337AB7;}
+.border li:nth-child(78){border-color: #337AB7;}
+.border li:nth-child(79){border-color: #337AB7;}
+.border li:nth-child(80){border-color: #337AB7;}
+.border li:nth-child(81){border-color: #337AB7;}
+.border li:nth-child(82){border-color: #337AB7;}
+.border li:nth-child(83){border-color: #337AB7;}
+.border li:nth-child(84){border-color: #337AB7;}
+.border li:nth-child(85){border-color: #337AB7;}
+.border li:nth-child(86){border-color: #337AB7;}
+.border li:nth-child(87){border-color: #337AB7;}
+.border li:nth-child(88){border-color: #337AB7;}
+.border li:nth-child(89){border-color: #337AB7;}
+.border li:nth-child(90){border-color: #337AB7;}
+.border li:nth-child(91){border-color: #337AB7;}
+.border li:nth-child(92){border-color: #337AB7;}
+.border li:nth-child(93){border-color: #337AB7;}
+.border li:nth-child(94){border-color: #337AB7;}
+.border li:nth-child(95){border-color: #337AB7;}
+.border li:nth-child(96){border-color: #337AB7;}
+.border li:nth-child(97){border-color: #337AB7;}
+.border li:nth-child(98){border-color: #337AB7;}
+.border li:nth-child(99){border-color: #337AB7;}
+.border li:nth-child(100){border-color: #337AB7;}
+.border li:hover {border-left: 10px solid transparent;}
+.border li:nth-child(1):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(2):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(3):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(4):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(5):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(6):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(7):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(8):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(9):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(10):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(11):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(12):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(13):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(14):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(15):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(16):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(17):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(18):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(19):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(20):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(21):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(22):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(23):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(24):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(25):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(26):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(27):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(28):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(29):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(30):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(31):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(32):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(33):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(34):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(35):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(36):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(37):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(38):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(39):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(40):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(41):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(42):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(43):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(44):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(45):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(46):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(47):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(48):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(49):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(50):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(51):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(52):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(53):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(54):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(55):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(56):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(57):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(58):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(59):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(60):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(61):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(62):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(63):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(64):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(65):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(66):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(67):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(68):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(69):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(70):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(71):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(72):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(73):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(74):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(75):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(76):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(77):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(78):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(79):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(80):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(81):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(82):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(83):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(84):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(85):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(86):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(87):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(88):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(89):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(90):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(91):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(92):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(93):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(94):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(95):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(96):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(97):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(98):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(99):hover {border-right: 50px solid #337AB7;}
+.border li:nth-child(100):hover {border-right: 50px solid #337AB7;}
+
+
+
+.border a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold; 
+        font-size: 15px;
+            color: #000;
+
+
+}
